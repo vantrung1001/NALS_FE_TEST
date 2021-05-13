@@ -4,29 +4,16 @@ export default function RegisterForm() {
     return (
         <form className="pt-3">
             <div className="form-group">
-                <label>Username</label>
                 <div className="input-group">
-                    <div className="input-group-prepend bg-transparent">
-                        <span className="input-group-text bg-transparent border-right-0">
-                            <i className="ti-user text-primary" />
-                        </span>
-                    </div>
-                    <input type="text" className="form-control form-control-lg border-left-0" placeholder="Username" />
+                    <input type="text" className="pl-3 form-control form-control-lg" placeholder="Username" />
                 </div>
             </div>
             <div className="form-group">
-                <label>Email</label>
                 <div className="input-group">
-                    <div className="input-group-prepend bg-transparent">
-                        <span className="input-group-text bg-transparent border-right-0">
-                            <i className="ti-email text-primary" />
-                        </span>
-                    </div>
-                    <input type="email" className="form-control form-control-lg border-left-0" placeholder="Email" />
+                    <input type="email" className="pl-3 form-control form-control-lg" placeholder="Email" />
                 </div>
             </div>
-            {/* <div className="form-group">
-                <label>Country</label>
+            <div className="form-group">
                 <select className="form-control form-control-lg" id="exampleFormControlSelect2">
                     <option>Country</option>
                     <option>United States of America</option>
@@ -35,25 +22,23 @@ export default function RegisterForm() {
                     <option>Germany</option>
                     <option>Argentina</option>
                 </select>
-            </div> */}
+            </div>
             <div className="form-group">
-                <label>Password</label>
                 <div className="input-group">
-                    <div className="input-group-prepend bg-transparent">
-                        <span className="input-group-text bg-transparent border-right-0">
-                            <i className="ti-lock text-primary" />
-                        </span>
-                    </div>
-                    <input type="password" className="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Password" />
+                    <input type="password" className="pl-3 form-control form-control-lg" id="exampleInputPassword" placeholder="Password" />
                 </div>
             </div>
             <div className="mb-4">
                 <div className="form-check">
-                    <label className="form-check-label text-muted">
-                        <input type="checkbox" className="form-check-input" />
+                    <label className="form--check-label mb-0">
+                        <input type="checkbox" className="form--check-input" />
+                        <span className="form--check-mark"></span>
                         I agree to all Terms &amp; Conditions
                     </label>
                 </div>
+            </div>
+            <div className="mt-3">
+                <a className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">SIGN UP</a>
             </div>
         </form>
 
