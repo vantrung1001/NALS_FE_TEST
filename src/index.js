@@ -3,9 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/configStore';
+import { history } from './utils/history';
 
 ReactDOM.render(
-    <App />,
+  <Router history={history}>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Router>,
   document.getElementById('root')
 );
 
