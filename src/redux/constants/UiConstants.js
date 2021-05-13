@@ -1,0 +1,3 @@
+export const CLOSE_LEFT_NAV = 'CLOSE_LEFT_NAV';
+export const OPEN_LEFT_NAV = 'OPEN_LEFT_NAV';
+export const TOGGLE_LEFT_NAV = 'TOGGLE_LEFT_NAV';
