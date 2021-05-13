@@ -20519,7 +20519,7 @@ dl li {
 
 @media (min-width: 768px) {
   .auth.auth-img-bg .auth-form-transparent {
-    width: 55%;
+    width: 85%;
     margin: auto;
   }
 }
@@ -21365,3 +21365,68 @@ dl li {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
+/* CUSTOM CSS */
+.form--check-label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form--check-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form--check-mark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+}
+
+.form--check-label input~.form--check-mark {
+  background-color: #fff;
+  border: 1px solid blue;
+  border-radius: 2px;
+}
+
+.form--check-label input:checked~.form--check-mark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.form--check-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form--check-label input:checked~.form--check-mark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form--check-label .form--check-mark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -4,12 +4,12 @@ import LoginForm from '../../Components/Form/UserForm/LoginForm'
 
 export default function Login() {
     return (
-        <div className="auth-form-transparent text-left p-3">
+        <div className="auth-form-transparent text-left py-3">
             <div className="brand-logo">
                 <img src={require('../../assets/images/logo.svg').default} alt="logo" />
             </div>
-            <h4>Welcome back!</h4>
-            <h6 className="font-weight-light">Happy to see you again!</h6>
+            <h4 className="font-weight-normal">Hello! let's get started</h4>
+            <h4 className="font-weight-normal">Sign in to continue.</h4>
             
             <LoginForm />
 
