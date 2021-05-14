@@ -24,7 +24,6 @@ export default function UserList() {
                     <div className="card-body">
                         <h4 className="card-title">User Table</h4>
                         <div className="table-responsive">
-                            {/* <UserListTable /> */}
                             <Pagination
                                 data={userList}
                                 RenderComponent={UserListTable}

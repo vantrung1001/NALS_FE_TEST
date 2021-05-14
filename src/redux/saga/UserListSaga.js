@@ -8,7 +8,6 @@ function * getUserList() {
         const {data, status} = yield call(() => userListService.getListUser())
 
         if(status === 200) {
-            console.log('data', data)
             yield put({
                 type: PUT_USER_LIST,
                 value: data
