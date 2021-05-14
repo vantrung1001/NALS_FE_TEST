@@ -1,0 +1,2 @@
+export const GET_USER_LIST_API = 'GET_USER_LIST_API';
+export const PUT_USER_LIST = 'PUT_USER_LIST';
