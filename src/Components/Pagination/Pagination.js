@@ -10,19 +10,19 @@ export default function Pagination(props) {
 
     const [currentPage, setCurrentPage] = useState(1);
 
-    function goToNextPage() {
+    const goToNextPage = () => {
         if(currentPage < pages) {
             setCurrentPage((page) => page + 1);
         }
     }
 
-    function goToPreviousPage() {
+    const goToPreviousPage = () => {
         if(currentPage > 1) {
             setCurrentPage((page) => page - 1);
         }
     }
 
-    function changePage(event) {
+    const changePage = (event) => {
         const pageNumber = Number(event.target.textContent);
         setCurrentPage(pageNumber);
     }
