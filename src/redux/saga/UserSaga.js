@@ -3,14 +3,14 @@ import { userService } from "../../Services/UserService";
 import { JWT } from "../../utils/constant";
 import { history } from "../../utils/history";
 import { LOGIN_API, PUT_USER_LOGIN } from "../constants/UserConstant";
-import {message} from 'antd'
+import { message } from 'antd'
 
 
 function* login(action) {
     try {
         const { data, status } = yield call(() => userService.login(action.model));
 
-        if(status === 200) {
+        if (status === 200) {
             localStorage.setItem(JWT, data.token);
 
             yield put({
